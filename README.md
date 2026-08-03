@@ -102,6 +102,7 @@ uv run uvicorn main:app --reload --port 8000
 ```
 
 then open `http://localhost:8000`
+Render https://rag-chatbot-whnu.onrender.com
 
 on startup you'll see logs like:
 ```
@@ -204,7 +205,7 @@ all tuneable knobs live in `app/config.py`:
 - **re-indexes on every restart** — this is fine for development but wasteful in production
 ---
 
-## Deployment notes
+## Deployment notes  Render link https://rag-chatbot-whnu.onrender.com
 
 - the dockerfile uses `${PORT:-8000}` — works out of the box on platforms that inject `PORT`
 - set all env vars (cohere, pinecone, google, index name) in the platform's environment config
